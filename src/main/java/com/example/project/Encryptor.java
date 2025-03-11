@@ -47,8 +47,10 @@ public class Encryptor {
     }
 
     public static String decryptMessage(String encryptedMessage, int rows) {
-        if (rows <= 0 || encryptedMessage.isEmpty()) return "";
-    
+        if (rows <= 0 || encryptedMessage.isEmpty()){
+            return "";
+        }
+        
         int cols = determineColumns(encryptedMessage.length(), rows);
     
         if (cols * rows < encryptedMessage.length()) {
