@@ -52,7 +52,7 @@ public class Encryptor {
         int cols = determineColumns(encryptedMessage.length(), rows);
     
         if (cols * rows < encryptedMessage.length()) {
-            throw new IllegalArgumentException("Invalid row count for decryption.");
+            System.out.println("Invalid row count for decryption.");
         }
     
         String[][] grid = new String[rows][cols];
