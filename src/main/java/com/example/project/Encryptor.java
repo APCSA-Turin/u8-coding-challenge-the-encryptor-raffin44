@@ -80,13 +80,13 @@ public class Encryptor {
     
 
     public static void main(String[] args) {
-        String message = "hello world";
-        int rows = 3;
+        String message = "Bnasshgasbkblleoa m!===eoJeit ee stlpy  li!===Lr m  erttaea arflte!==";
+        int rows = 23;
 
         String encrypted = encryptMessage(message, rows);
         System.out.println("Encrypted: " + encrypted);
 
-        String decrypted = decryptMessage(encrypted, rows);
+        String decrypted = decryptMessage(message, rows);
         System.out.println("Decrypted: " + decrypted);
     }
 }
